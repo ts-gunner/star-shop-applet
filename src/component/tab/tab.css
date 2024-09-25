@@ -1,4 +1,4 @@
-.tab-header {
+.custom-tab-header {
     display: inline-flex;
     background-color: #ededed;
     border-radius: 30px;
@@ -7,13 +7,3 @@
     position: relative;
     z-index: 0;
 }
-.tab-header-item {
-    width: 4.375rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    margin-left: 0.125rem;
-    margin-right: 0.125rem;
-}
-

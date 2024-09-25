@@ -15,25 +15,33 @@ export default function Item({
 }: ItemType) {
     return (
         <View style={{
-            backgroundColor: theme.secondary,
+            backgroundColor: "#ffffff",
             borderRadius: "16px",
             marginTop: "5%",
             marginBottom: "5%",
-            padding: "3%"
+            padding: "3%",
+
+            boxShadow: "0 .125rem .25rem #ccc"
         }}>
             <Card
                 style={{
-                    color: theme.secondaryText,
+                    color: "black",
                 }}
                 shadow
             >
                 <View style={{ display: "flex", justifyContent: "space-between" }}>
                     <View>
-                        <View>{title}</View>
-                        <View style={{
-                            fontSize: "0.9em",
-                            color: theme.divider,
-                        }}>{description}</View>
+                        <View>
+
+                        </View>
+                        <View>
+                            <View>{title}</View>
+                            <View style={{
+                                fontSize: "0.9em",
+                                color: theme.divider,
+                            }}>{description}</View>
+                        </View>
+
                     </View>
                     <View style={{ display: "flex", alignItems: "center" }}>
                         <Text style={{ marginRight: "10%" }}>{score}</Text>

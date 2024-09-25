@@ -2,14 +2,14 @@ import { AppConfig } from "remax/wechat";
 
 const config: AppConfig = {
     tabBar: {
-        color: "#00BCD4",
+        color: "#b2ebf2",
         selectedColor: "#ffffff",
         backgroundColor: "#009688",
         list: [
             {
                 pagePath: "pages/tasks/index",
-                iconPath: "/images/tasks.png",
-                selectedIconPath: "/images/tasks.png",
+                iconPath: "/images/task.png",
+                selectedIconPath: "/images/task-active.png",
                 text: "任务清单"
             },
             {
@@ -29,10 +29,11 @@ const config: AppConfig = {
     entryPagePath: "pages/tasks/index",
     pages: ["pages/shop/index", 'pages/home/index', "pages/tasks/index"],
     window: {
-        navigationBarTitleText: '明日之星',
+        navigationBarTitleText: '成果集市',
         navigationBarBackgroundColor: '#ffffff',
         navigationBarTextStyle: "black"
-    }
+    },
+    lazyCodeLoading: "requiredComponents"
 };
 
 export default config;
